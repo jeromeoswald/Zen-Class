@@ -1,0 +1,50 @@
+{
+    "name": "Jerome Oswald J",
+    "title": "Software Developer",
+    "contact": {
+        "email": "jeromeoswald7@gmail.com",
+        "phone": "999999999",
+        "address": "123 Main St, Trichy, Tamil Nadu, 621601"
+    },
+    "summary": "Experienced software developer with a passion for creating efficient and scalable applications. Skilled in multiple programming languages and frameworks.",
+    "experience": [
+        {
+            "title": "Software Engineer",
+            "company": "Bishop  Heber College",
+            "location": "Trichy",
+            "dates": "January 2018 - Present",
+            "description": "Developed and maintained software applications for various clients. Implemented new features and fixed bugs to improve overall functionality."
+        },
+        {
+            "title": "Web Developer",
+            "company": "Capgemini",
+            "location": "Trichy",
+            "dates": "June 2015 - December 2017",
+            "description": "Designed and developed websites for clients using HTML, CSS, and JavaScript. Collaborated with team members to ensure timely delivery of projects."
+        }
+    ],
+    "education": [
+        {
+            "degree": "Master of Science in Computer Application",
+            "school": "Bharathidasan University",
+            "location": "Trichy",
+            "dates": "2017 - 2019"
+        },
+        {
+            "degree": "Bachelor of Science in Computer Science",
+            "school": "Bharathidasan University",
+            "location": "Trichy",
+            "dates": "2014 - 2017"
+        }
+    ],
+    "skills": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Java",
+        "Python",
+        "React",
+        "Node.js",
+        "SQL"
+    ]
+}
