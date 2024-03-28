@@ -115,10 +115,12 @@ let a =[10, 20, 30];
 //map,filter,reduce
 let x =[100, 200, 300];
 
-let mapResult = x.map((item) => {
+let mapResult = x.map((item) => 
+{
     return item * 10;
 });
-let filterResult = x.filter((item) => {
+let filterResult = x.filter((item) => 
+{
     return item > 10;
 });
 
@@ -127,7 +129,8 @@ console.log(filterResult);
 
 
 let z =[1, 2, 3, 4, 5, 6, 7];
-let reduceResult = z.reduce((x,y) => {
+let reduceResult = z.reduce((x,y) => 
+{
     console.log("X: ",x, "Y: ", y);
     return x + y;
 
@@ -136,7 +139,8 @@ console.log(reduceResult);
 
 var input = [23, 45, 678, 90, 33, 21, 780, 670, 498, 58940, 656, 900, 370, 1299, 1300];
 
-let filterInput = input.filter((item) => {
+let filterInput = input.filter((item) => 
+{
     return item % 3;
 });
 console.log(filterInput);
