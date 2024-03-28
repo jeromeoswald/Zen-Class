@@ -1,106 +1,75 @@
-// const a = 1, b = 2, c = 3;
-// const array = [a, b, c];
-
-// console.log(array); // Output: [1, 2, 3]
-// console.log(a)
-
-
-// function numbers(a, b, ...c) {
-//     console.log(a);
-//     console.log(b);
-//     console.log(c);      
-// }
-// numbers('1', '2', '3', '4', '5');
-
-
-// const num = [1,2,3]
-// const[a,b,c] = num;
-// console.log(a);
-// console.log(b);
-// console.log(c); 
-
-// const arr1 =[1,2,3]
-// const arr2 =[4,5,6]
-
-
-// const person ={
-// Name: "Jerome Oswald Ebenezer J",
-// Age: 27,
-// };
-
-// const { Name: YourName, Age: YourAge } = person;
-
-// console.log("Name:", YourName);
-// console.log("Age:", YourAge);
-
-function createEmployeeReports(employees) {
-    const reports = [];
-    for (let i = 0; i < employees.length; i++){
-        const {name, department ,email} = employees[i];
-        const report = `Name: ${name}, Department: ${department}, Emailid: ${email}`;
-        reports.push(report)
-    }
-return reports
-
-}
-
-const employees = [
-{
-    name: "employee1", 
-    age: 27, 
-    department: "sales", 
-    email: "employee1@gmail.com"
-},
-{
-    name: "employee2", 
-    age: 28,
-    department: "development", 
-    email: "employee1@gmail.com"
-},
-{
-    name: "employee3", 
-    age: 26, 
-    department: "Marketing", 
-    email: "employee1@gmail.com"
-},
-{
-    name: "employee4", 
-    age: 25, 
-    department: "management",
-    email: "employee1@gmail.com"
-},];
-
-// function createEmployeeReports(employees) {
-//     return employees.map(employee => `Employee = ${employee.name}, Age = ${employee.age} , Department = ${employee.department}, EamilId ${employee.email}`);
+// function test() {
+//     console.log(beforeLet);
+//     console.log(beforeConst;
+//         let beforeLet = 'defined';
+//         let beforeConst = 'defined';
 // }
 
-const reports = createEmployeeReports(employees);
-console.log(reports);
+// test();
 
-// var a;
-// var b = null;
-// console.log();
+// var varVariable = 1 ;
+// var varVariable = 2 ;
+// let letVariable = 3 ;
+// let letVariable = 4 ;
+// const constVariable = 5 ;
+// constVariable = 6 ;
+
+// console.log(varVariable, letVariable, constVariable);
+
+// var welcome = 'Welcome to Sweater Season!' // globally scoped
+// function fallActivities() {
+//    var activities = 'buy a pumpkin and make Jack O Lantern'; 
+// // locally scoped
+//    console.log(`You can ${activities}`); 
+//    // The `backtick`, a.k.a the template literal, is a new feature in ES6 to replace the complication of string concatenation.
+// }
+// console.log(welcome); // Welcome to Sweater Season!
+// console.log(activities);
 
 
-var shape = 
-{
-    is2D: true,
-};
+let firstName = "Jerome"
+let lastName = "Oswald J"
+let age = 27;
+let city = "Trichy"
 
-var circle = 
-{
-    radius: 3,
-};
+console.log("My name is " + firstName + " " + lastName + "." + "My age is " + age + "." +" I currently live in "+ city + "." );
+console.log(`My name is ${firstName} ${lastName}.My age is ${age}. I currently live in ${city}.`);
 
-var rectangle = 
-{
-    length:1,
-    breadth: 2,
+function sum(x,y,z){
+    return x + y+ z;
 }
-circle.__proto__ = shape;
-console.log("Is Circle a 2D Shape :" + circle.is2D);
-console.log("Radius of circle: " + circle.radius);
 
-rectangle.__proto__ = shape;
-console.log("Is Rectangle a 2D Shape :" + rectangle.is2D);
-console.log("Length of Rectangle :" + rectangle.length + " Breadth of Rectangle :" + rectangle.breadth);
+const numbers = [1, 2, 3]
+console.log(sum(numbers[0],numbers[1],numbers[2],));
+console.log(sum(...numbers));
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+console.log([...arr1,...arr2]);
+
+// let obj1 = {name: "Jerome", age:27};
+// let obj2 = {role: "TL", company:"Google"};
+// let combineobj = {...obj1,...obj2}
+// console.log(combineobj);
+
+function concatenatestrings(...strings){
+    return strings;//.join(' ');
+}
+console.log(concatenatestrings("I","Love","Javascript!"));
+
+
+
+// function concatenatestrings(...strings){
+//     return strings.join(' ');
+// }
+// console.log(concatenatestrings("I","Love","Javascript!"));
+
+
+function printUserInfo(name, age, ...hobbies){
+    console.log(name,age);
+    console.log("Hobbies:", hobbies.join(','));
+}
+
+
+
+printUserInfo("Jerome", 27, "Reading", "Coding", "PS")
