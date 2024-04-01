@@ -119,6 +119,7 @@ let mapResult = x.map((item) =>
 {
     return item * 10;
 });
+
 let filterResult = x.filter((item) => 
 {
     return item > 10;

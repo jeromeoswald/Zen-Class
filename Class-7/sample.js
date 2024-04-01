@@ -1,49 +1,30 @@
-fetch('resume.json')
-    .then(response => response.json())
-    .then(data => {
-        console.log(data); // This will log the JSON data from the file
-    })
-    .catch(error => {
-        console.error('Error loading the JSON file:', error);
+fetch('https://restcountries.com/v3.1/all')
+  .then(response => response.json())
+  .then(data => {
+    // Get all the countries from Asia continent /region using Filter function
+    const asiaCountries = data.filter(country => country.region === 'Asia');
+    console.log('Countries from Asia:', asiaCountries);
+
+    // Get all the countries with a population of less than 2 lakhs using Filter function
+    const countriesWithPopulationLessThan2Lakhs = data.filter(country => country.population < 200000);
+    console.log('Countries with population less than 2 lakhs:', countriesWithPopulationLessThan2Lakhs);
+
+    // Print the following details name, capital, flag, using forEach function
+    data.forEach(country => {
+      console.log('Name:', country.name.common);
+      console.log('Capital:', country.capital);
+      console.log('Flag:', country.flags.svg);
     });
 
-//for Loop
-    const resume = {
-        "name": "Jerome Oswald J",
-        "title": "Software Developer",
-        "contact": {
-            "email": "jeromeoswald7@gmail.com",
-            "phone": "999999999",
-            "address": "123 Main St, Trichy, Tamil Nadu, 621601"
-        },
-        // other resume data
-    };
-    
-   
-for (let key in resume) {
-    console.log(key + ": " + JSON.stringify(resume[key]));
-  }
+    // Print the total population of countries using reduce function
+    const totalPopulation = data.reduce((acc, country) => acc + country.population, 0);
+    console.log('Total population:', totalPopulation);
 
-
-//for in
-
-    for (let key in resume) {
-        if (resume.hasOwnProperty(key)) {
-          console.log(key + ": " + JSON.stringify(resume[key]));
-        }
-      }
-      
-
-//for of
-    const entries = Object.entries(resume);
-for (let [key, value] of entries) {
-  console.log(key + ": " + JSON.stringify(value));
-}
-
-
-//forEach
-Object.entries(resume).forEach(([key, value]) => {
-    console.log(key + ": " + JSON.stringify(value));
-  });
-
-    
+    // Print the country that uses US dollars as currency.
+    const usDollarCountries = data.filter(country => {
+      const currencies = country.currencies;
+      return currencies && currencies.USD;
+    });
+    console.log('Countries using US Dollars:', usDollarCountries);
+  })
+  .catch(error => console.error('Error fetching data:', error));
