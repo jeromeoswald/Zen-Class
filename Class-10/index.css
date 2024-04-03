@@ -1,0 +1,17 @@
+input:focus {
+    outline: red;
+}
+
+a:link {
+    color: palevioletred;
+    /* display: none ; */
+}
+
+a:visited {
+    color: green;
+    /* display: none ; */
+}
+
+button:active {
+    background-color: blueviolet;
+}
