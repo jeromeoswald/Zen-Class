@@ -1,0 +1,21 @@
+.gold{
+    color: gold;
+}
+
+.big{
+    font-size: 2rem;
+}
+
+#scrollable{
+    position: relative;
+    background-color: lightcyan;
+    height: 70px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 1em;
+    overflow: auto;
+}
+
+.sample{
+    display: none;
+}
