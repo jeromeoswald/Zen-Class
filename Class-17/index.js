@@ -42,7 +42,7 @@ function openNewWidow() {
             } else {
                 appendAlert("No Window is Currently Open!!", "success");
             }
-        },10000)
+        },300000)
     } else {
         appendAlert("Please Enter the URL", "danger");
     }
@@ -94,6 +94,34 @@ function startStatusCheck(){
         }
     }, 5000);
 
+}
+
+function getScreenInfo(event){
+    console.log("Screen Info Event", event);
+    appendAlert("Screen Width" + window.innerWidth + ", Height" + window.innerHeight);
+}
+
+function reloadWindow() {
+    // if(myWindow && !myWindow.closed) {
+        window.location.reload();
+    // }
+}
+
+function moveWindow(xPos,yPos){
+    // if(myWindow && !myWindow.closed){
+        window.moveTo(xPos,yPos);
+    // }
+}
+
+function resizeWindow(width, height){
+    // if(myWindow && !myWindow.closed){
+        window.resizeTo(width, height);
+    // }
+}
+
+function display(event,str){
+    console.log("Key Pressed Event", event);
+    appendAlert(str + "- EventTriggered!!!" , "danger")
 }
 
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
