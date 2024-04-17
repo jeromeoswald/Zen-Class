@@ -1,21 +1,3 @@
-// (function(){
-//     var counter = 10;
-
-//     var counterdownElement = document.getElementById("countdown");
-
-//     var updateCountdown = function () {
-//         counterdownElement.textContent = counter;
-//         if (counter === 0){
-//             counterdownElement.textContent = "Happy Independence Day!!!";
-//             return;
-//         }
-//         counter--;
-//         setTimeout(updateCountdown,1000);
-//     };
-//     setTimeout(updateCountdown,1000);
-// })();
-
-
 var counterdownElement = document.getElementById("countdown");
 
 
