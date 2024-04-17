@@ -1,0 +1,25 @@
+.container{
+    margin: auto;
+    border-color: red;
+}
+
+div {
+    background-color: burlywood;
+    color: rebeccapurple;
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/* Styling h1 and links
+––––––––––––––––––––––––––––––––– */
+h1[alt="Simple"] {color: white;}
+a[href], a[href]:hover {color: grey; font-size: 0.5em; text-decoration: none}
+
+
+body
+{
+  background: lightblue !important;
+}

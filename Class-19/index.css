@@ -1,0 +1,16 @@
+div {
+    background-color: burlywood;
+    color: black;
+}
+
+#final {
+    background-color: brown;
+    color: beige;
+    /* display: none ; */
+}
+
+span {
+    background-color: goldenrod;
+    color: beige;
+    /* display: none ; */
+}

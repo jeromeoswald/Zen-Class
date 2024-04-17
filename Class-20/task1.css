@@ -1,0 +1,8 @@
+*{
+    font-family: Verdana;
+}
+
+/* Style for the item to be moved to the right */
+.move-right {
+    float: right;
+}
