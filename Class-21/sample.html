@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="sample.js" defer></script>
+</head>
+<body>
+    <h1>Click Here to see Coordinates</h1>
+    <span id="coordinateSpan">Coordinates Appear Here</span>
+    <h2>Mouse Over Me!!</h2>
+    <div id="element">Mouse Over Me!!</div>
+    <h2>Enter Text</h2>
+    <button onclick="displayText()">click to enter text</button>
+    <span id="displaySpan">Text Appear Here</span>
+
+    <h2>Character Count in Textarea</h2>
+    <textarea id="myTextarea" placeholder="Type Something...."></textarea>
+    <div id="charCountDisplay">Character Count:</div>
+
+    <h2>Form Validation</h2>
+    <form id="myForm">
+    <input type="text" name="" id="inputField" placeholder="Cannot be empty" />
+    <button type="submit">submit</button>
+    </form>
+
+    <h2>Full Screen Toogle</h2>
+    <button id="enterfullScreen">Enter Full Screen</button>
+    <button id="exitfullScreen">Exit Full Screen</button>
+
+    <h2>Editable Content on Hover</h2>
+    <div id="editableContent">Hover over this text to edit it.</div>
+
+    <h2>Convert Decimal to Binary or Hexadecimal</h2>
+    <input type="number" id="numberInput" placeholder="Enter Decimal Value" />
+    <select id="conversionType">
+        <option value="binary">Binary</option>
+        <option value="hexadecimal">Hexadecimal</option>
+    </select>
+    <button onclick="ConvertAndDisplay()">convert</button>
+    <span id="conversionResult">Result will be appear here!! </span>
+
+
+
+</body>
+</html>
