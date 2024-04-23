@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 const card = document.createElement("div");
                 card.classList.add("col-lg-4", "col-sm-12");
 
+                // Add colored border
+                card.style.border = "2px solid red";
+
                 // Card header
                 const cardHeader = document.createElement("div");
                 cardHeader.classList.add("card-header");
@@ -38,10 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Flag
                 const flagImg = document.createElement("img");
-                flagImg.classList.add("card-img-top", "mt-3");
-                // flagImg.src = "https://flagcdn.com/"
-                flagImg.alt = `${flags} Flag`;
-                cardBody.appendChild(flagImg);
+                    flagImg.classList.add("card-img-top", "mt-3");
+                    flagImg.src = `${flags[0]}`;
+                    flagImg.style.width = "200px"; // Set fixed width
+                    flagImg.style.height = "150px"; // Set fixed height
+                    cardBody.appendChild(flagImg);
 
                 // Button for weather
                 const weatherButton = document.createElement("button");

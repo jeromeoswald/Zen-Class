@@ -113,19 +113,23 @@
 
 // fetchCountryData();
 
-const getName = async() =>{
-    try{
-        let name = await namePromise;
-        console.log(`Name received from DB = $`);
+const getName = async () => {
+    try {
+      let name = await namePromise;
+      console.log(`Name received from DB = ${name}`);
+    } catch (err) {
+      console.log("Error occurred:", err);
     }
-}
-
-
-
-let promiseObj = new Promise((resolve,reject) => {
-    console.log("Getting user name from DB....");
-    setTimeout(()=>{
-        resolve("Jerome Oswald");
-        //reject("Error 404");
-    },1000);
-});
+  };
+  
+  let namePromise = new Promise((resolve, reject) => {
+    console.log("Getting name from DB....");
+    setTimeout(() => {
+      resolve("Manikandan Anbalagan");
+      //reject("No data!!");
+    }, 1000);
+  });
+  
+  getName();
+  
+  // promiseObj.then(() => {success}, () => {err})

@@ -13,3 +13,21 @@ body{
 h1:hover{
     cursor: pointer;
 }
+
+.card {
+    width: 200px; /* Set the fixed width of the card */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden; /* To prevent image overflow */
+    margin: 10px;
+  }
+  
+  .card-img {
+    width: 100%; /* Make sure the image takes the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  

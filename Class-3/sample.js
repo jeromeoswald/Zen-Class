@@ -20,7 +20,7 @@ function fetchCountryData(){
     }).then((data)=>{
         data.forEach((country) => 
     {
-        console.log(country.name.common + ": "+ country.flag + ", "+ country.region + ", "+ country.subregion + ", "+ country.population);
+        console.log(country.name.common + ": "+ country.flags.png + ", "+ country.region + ", "+ country.subregion + ", "+ country.population);
     });
     })
 }
