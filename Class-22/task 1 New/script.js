@@ -22,10 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
   
           const flagImg = document.createElement("img");
           flagImg.src = country.flags.png;
+          // console.log(flagImg);
           flagImg.style.width = "200px"; // Set fixed width
           flagImg.style.height = "150px"; // Set fixed height
           cardBody.appendChild(flagImg);
           flagImg.classList.add("img-fluid", "mb-2");
+          // Add border to the flag image
+          flagImg.style.border = "2px solid #1E0342";
   
           const region = document.createElement("p");
           region.textContent = `Region: ${country.region}`;
