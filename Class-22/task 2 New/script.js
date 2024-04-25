@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 // flag.className = 'card-img-top';
 
                 const flag = document.createElement("img");
-                flag.src = country.flag;
+                flag.src = country.flag.svg;
                 console.log(country.flag);
-                flag.alt = country.name + "flag";
+                flag.alt = country.name + " flag";
                 // flag.className = 'card-img-top';
                 flag.style.width = "200px"; // Set fixed width
                 flag.style.height = "150px"; // Set fixed height

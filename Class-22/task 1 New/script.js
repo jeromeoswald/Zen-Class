@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
           const flagImg = document.createElement("img");
           flagImg.src = country.flags.png;
-          // console.log(flagImg);
+          console.log(flagImg);
           flagImg.style.width = "200px"; // Set fixed width
           flagImg.style.height = "150px"; // Set fixed height
           cardBody.appendChild(flagImg);
@@ -35,7 +35,22 @@ document.addEventListener("DOMContentLoaded", function() {
   
           const subregion = document.createElement("p");
           subregion.textContent = `Subregion: ${country.subregion}`;
-  
+
+          const capital = document.createElement('p');
+          capital.textContent = 'Capital: ' + country.capital;
+
+          const latlng = document.createElement('p');
+          latlng.textContent = 'Latlng: ' + country.latlng;
+          
+          const code = document.createElement('p');
+          code.textContent = 'Country Code: ' + country.cca3;
+
+          const area = document.createElement('p');
+          area.textContent = 'Area: ' + country.area;
+          
+          const population = document.createElement('p');
+          population.textContent = 'Population: ' + country.population;
+
           const weatherButton = document.createElement("button");
           weatherButton.textContent = "Click for Weather";
           weatherButton.classList.add("btn", "btn-primary", "btn-block", "mt-3"); // Add margin-top for button
@@ -46,8 +61,13 @@ document.addEventListener("DOMContentLoaded", function() {
           });
   
           cardBodyContent.appendChild(flagImg);
+          cardBodyContent.appendChild(capital);
+          cardBodyContent.appendChild(latlng);
           cardBodyContent.appendChild(region);
           cardBodyContent.appendChild(subregion);
+          cardBodyContent.appendChild(code);
+          cardBodyContent.appendChild(area);
+          cardBodyContent.appendChild(population);
           cardBodyContent.appendChild(weatherButton);
   
           cardBody.appendChild(cardHeader);

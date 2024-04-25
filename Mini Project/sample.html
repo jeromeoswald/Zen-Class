@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React - Day - 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <script src="./Scoping_var_let_const.js" defer></script>
+    <script src="./arrow_functions.js" defer></script>
+    <script src="./this.js" defer></script>
+    <script src="./templateliterals.js" defer></script>
+    <script src="./spreadrest.js" defer></script>
+    <script src="./class.js" defer></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="nb-4">Javascript Concepts</h1>
+        <!-- Scoping - var vs let vs const Example Card -->
+        <div class="card">
+            <div class="card-header">
+              Scoping - var vs let vs const
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-primary" onclick="testVar()">Test var</button>
+                <button type="button" class="btn btn-secondary" onclick="testLet()">Test let</button>
+                <button type="button" class="btn btn-success" onclick="testConst()">Test const</button>
+            </div>
+            <div id="output" class="card-footer text-body-secondary"></div>
+          </div>
+          <br>
+          <!-- Arrow Function -->
+          <div class="card">
+            <div class="card-header">
+              Arrow Function
+            </div>
+            <div class="card-body">
+                <p class="card-text">Click the button to test arrow function with array methods:</p>
+                <button type="button" class="btn btn-primary" onclick="testArrowfunctions()">Test Arrow Functions</button>
+            </div>
+            <div id="arrowOutput" class="card-footer text-body-secondary"></div>
+          </div>
+          <br>
+          <!-- This literals -->
+          <div class="card">
+            <div class="card-header">
+              The 'this' keyword and lexical soping
+            </div>
+            <div class="card-body">
+                <button id="traditionalBtn" type="button" class="btn btn-primary">Traditional Button</button>
+                <button id="arrowBtn" type="button" class="btn btn-primary">Arrow Button</button>
+                <p id="traditionalOutput">Waiting for traditional Function...</p>
+                <p id="thisArrowOutput">Waiting for Arrow Function...</p>
+            </div>
+          </div>
+          <br>
+          <!-- Template literals -->
+          <div class="card">
+            <div class="card-header">
+                Template literals
+            </div>
+            <div class="card-body">
+                <button  id="traditionalBtn" class="btn btn-primary" onclick="showTemplateLiterals()">show Traditional Literals</button>
+                <!-- <button id="arrowBtn" type="button" class="btn btn-primary">Arrow Button</button>
+                <p id="traditionalOutput">Waiting for traditional Function...</p>
+                <p id="thisArrowOutput">Waiting for Arrow Function...</p> -->
+                <p id="templateOutput"></p>
+            </div>
+          </div>
+          <br>
+          <!-- Spread & Rest literals -->
+          <div class="card">
+            <div class="card-header">
+                Spread & Rest literals
+            </div>
+            <div class="card-body">
+                <button id="spreadBtn" type="button" class="btn btn-primary" onclick="testSpread()">Test Spread</button>
+                <button id="restBtn" type="button" class="btn btn-primary" onclick="testRest(2,3,4,5,6)">Rest Spread</button>
+                <p id="spreadRestOutput"></p>
+                <!-- <button id="arrowBtn" type="button" class="btn btn-primary">Arrow Button</button>
+                <p id="traditionalOutput">Waiting for traditional Function...</p>
+                <p id="thisArrowOutput">Waiting for Arrow Function...</p> -->
+            </div>
+          </div>
+          <br>
+          <!-- Class -->
+          <div class="card">
+            <div class="card-header">
+                Class
+            </div>
+            <div class="card-body">
+                <button id="spreadBtn" type="button" class="btn btn-primary" onclick="testClass()">Test class</button>
+                <!-- <button id="restBtn" type="button" class="btn btn-primary" onclick="testRest(2,3,4,5,6)">Rest Spread</button> -->
+                <div id="classOutput"></div>
+                <!-- <button id="arrowBtn" type="button" class="btn btn-primary">Arrow Button</button>
+                <p id="traditionalOutput">Waiting for traditional Function...</p>
+                <p id="thisArrowOutput">Waiting for Arrow Function...</p> -->
+            </div>
+          </div>
+    </div>
+</body>
+</html>
